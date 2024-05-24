@@ -48,5 +48,28 @@
     <script src="lib/ammo.js" defer></script>
 
     <script type="module" src="dist/main.bundle.js" defer></script>
+
+    <script>
+      
+if (localStorage.getItem('v2_settings')) {
+
+    let settings = JSON.parse(localStorage.getItem('v2_settings'));
+    
+
+    for (let i = 0; i < settings.length; i++) {
+        let innerArray = settings[i];
+        
+
+        if (['SoundEffectVolume', 'MusicVolume', 'CheckpointVolume'].includes(innerArray[0])) {
+            // Set the second item to '0'
+            innerArray[1] = '0';
+        }
+    }
+    
+
+    localStorage.setItem('v2_settings', JSON.stringify(settings));
+}
+
+    </script>
   </body>
 </html>
