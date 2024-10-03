@@ -16,7 +16,7 @@ const t="166",e=0,i=1,r=100,a=0,o=1e3,s=1001,l=1002,c=1009,h=1015,d=1023,u=1028,
 setTimeout(()=>{
     window.history.replaceState(null, document.title, "/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn")
     const inIframe = () => window.self !== window.top;
-          if(inIframe || window.location.hostname != "jblitzar.github.io"){
+          if(inIframe() || window.location.hostname != "jblitzar.github.io"){
             window.location.reload()
           }
     },1000);
