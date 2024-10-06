@@ -15467,6 +15467,6 @@ setTimeout(() => {
   const inIframe = () => window.self !== window.top;
   if (inIframe() || window.location.hostname != "jblitzar.github.io") {
     window.location =
-      "jblitzar.github.io/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn";
+      "https://jblitzar.github.io/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn";
   }
 }, 1000);
