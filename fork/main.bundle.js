@@ -42376,7 +42376,7 @@
           const G = document.createElement("a");
           (G.href = "https://selenite.cc"),
             (P.target = "_blank"),
-            (G.textContent = "Ripped by Selenite. No multiplayer features."),
+            (G.textContent = "Ripped by Selenite, improved by JBlitzar. No multiplayer features."),
             GC(this, SC, "f").appendChild(G),
             i.hasLoaded()
               ? GC(this, yC, "m", zC).call(this)
