@@ -42374,7 +42374,7 @@
             (P.textContent = '"Sci-fi Theme" by Maou (CC-BY 4.0)'),
             GC(this, SC, "f").appendChild(P);
           const G = document.createElement("a");
-          (G.href = "https://selenite.cc"),
+          (G.href = "https://google.com"),
             (P.target = "_blank"),
             (G.textContent = "Ripped by Selenite, improved by JBlitzar. No multiplayer features."),
             GC(this, SC, "f").appendChild(G),
