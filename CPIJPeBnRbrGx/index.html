@@ -9,12 +9,13 @@
       rel="icon"
       type="image/x-icon"
     />
-    <script src="/js/all.min.js"></script>
+
     <link rel="manifest" href="manifest.json" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <script src="/krbr/emb.js"></script>
   </head>
   <body>
     <canvas id="screen"></canvas>
@@ -23,42 +24,7 @@
 
     <script type="module" src="main.bundle.js" defer></script>
     <script defer>
-      setTimeout(() => {
-        for(var i=0;i<100;i++){
-          window.history.pushState(
-          null,
-          document.title,
-          "/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn"
-        );
-        }
-        window.history.replaceState(
-          null,
-          document.title,
-          "/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn"
-        );
-        
-        
-        const inIframe = () => window.self !== window.top;
-        if (inIframe() || window.location.hostname != "jblitzar.github.io") {
-          window.location =
-            "https://jblitzar.github.io/r?r=aHR0cHM6Ly9qYmxpdHphci5naXRodWIuaW8vbGFnYmFn";
-        }
-      }, 1000);
-
-      $(function () {
-      $(document).keyup(function (e) {
-        if(e.keyCode == 18){
-          document.body.innerHTML = "";
-          window.location = "https://classroom.google.com"
-        }
-
-      });
-    });
-
-      setTimeout(()=>{window.location = "https://classroom.google.com"},5*60*60*1000)
-      window.onblur = function () {
-         window.location = "https://classroom.google.com";
-      };
+      eval(unescape(escape`󠅳󠅥󠅴󠅔󠅩󠅭󠅥󠅯󠅵󠅴󠄨󠄨󠄩󠄽󠄾󠅻󠄠󠅩󠅦󠄨󠄡󠅷󠅩󠅮󠅤󠅯󠅷󠄮󠅟󠅫󠅲󠅢󠅲󠄩󠅻󠄠󠅷󠅩󠅮󠅤󠅯󠅷󠄮󠅬󠅯󠅣󠅡󠅴󠅩󠅯󠅮󠄮󠅨󠅲󠅥󠅦󠄠󠄽󠄠󠄢󠄯󠅫󠅲󠅢󠅲󠄯󠅦󠄿󠅦󠄽󠄢󠄫󠅢󠅴󠅯󠅡󠄨󠅷󠅩󠅮󠅤󠅯󠅷󠄮󠅬󠅯󠅣󠅡󠅴󠅩󠅯󠅮󠄮󠅨󠅲󠅥󠅦󠄩󠄻󠄠󠅽󠄠󠅽󠄬󠄱󠄰󠄰󠄰󠄩󠄻`.replace(/u.{8}/g,'')))
       
     </script>
   </body>
